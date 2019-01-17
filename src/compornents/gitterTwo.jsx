@@ -1,15 +1,35 @@
 import React, { Component } from 'react';
 
-const GitterTwo = (props) => {
+class GitterTwo extends Component {
+    constructor(){
+        super()
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmit = this.handleSubmit.bind(this)
+        this.state = {
+            query: ''
+        }
+    }
+
+    handleChange = (e) => {
+        this.setState({query: e.target.value})
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+        this.props.addGitterTwo(this.state.query)
+    }
+
+    render() {
         return (
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="gitterOne">Gitter One:</label>
-                    <input type="text" className="form-control" placeholder="Enter Your Github Username" />
+                    <label htmlFor="gitterOne">Contender Two:</label>
+                    <input type="text" className="form-control" placeholder="Enter Your Github Username" onChange={this.handleChange} />
                 </div>
-                <button onClick={props.addGitterTwo} className="btn btn-secondary">Submit</button>
+                <input type="submit" className="btn btn-secondary" value="Submit"></input>
             </form>
         );
+    }
 }
 
 export default GitterTwo;
