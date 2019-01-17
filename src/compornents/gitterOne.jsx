@@ -24,7 +24,7 @@ class GitterOne extends Component {
         return (
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="gitterOne">Gitter Two:</label>
+                    <label htmlFor="gitterOne">Contender Two:</label>
                     <input type="text" id="gitterOne" className="form-control" placeholder="Enter Your Github Username" onChange={this.handleChange} />
                 </div>
                 <input type="submit" className="btn btn-secondary" value="Submit"></input>
