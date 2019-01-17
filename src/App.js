@@ -13,24 +13,35 @@ class App extends Component {
       battleIsOn: false
     }
   }
+
   render() {
     return (
       <div>
         <Navbar />
-        <Gitter addGitterOne={this.addGitterOne} addGitterTwo={this.addGitterTwo} />
+        <Gitter addGitterOne={this.addGitterOne} addGitterTwo={this.addGitterTwo} battleIsOn={this.state.battleIsOn}/>
       </div>
     );
   }
 
   addGitterOne = (query) => {
-    // e.preventDefault()
     axios.get(`https://api.github.com/users/${query}`).then((response) => {
       this.setState({ gitterOne: response.data })
+      if(Object.keys(this.state.gitterOne).length > 0 && Object.keys(this.state.gitterTwo).length > 0){
+        this.setState({battleIsOn: true})
+      }
+
     })
   }
 
-  addGitterTwo = () => {
+  addGitterTwo = (query) => {
+    axios.get(`https://api.github.com/users/${query}`).then((response) => {
+      this.setState({ gitterTwo: response.data })
 
+      if(Object.keys(this.state.gitterOne).length > 0 && Object.keys(this.state.gitterTwo).length > 0){
+        this.setState({battleIsOn: true})
+      }
+
+    })
   }
 }
 
