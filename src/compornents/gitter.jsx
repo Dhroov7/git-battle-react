@@ -15,6 +15,7 @@ class Gitter extends Component {
                 <div className="col">
                     <GitterTwo addGitterTwo={this.props.addGitterTwo} />
                 </div>
+                <div className="col-2"></div>
             </div>
         );
     }
