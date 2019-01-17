@@ -8,6 +8,10 @@ class GitterTwo extends Component {
         this.state = {
             query: ''
         }
+        this.style = {
+            borderRadius: '50%',
+            width: '70%'
+        }
     }
 
     handleChange = (e) => {
@@ -20,6 +24,20 @@ class GitterTwo extends Component {
     }
 
     render() {
+
+        if (Object.keys(this.props.gitterTwo).length > 0) {
+            return (
+                <div className="row">
+                    <div className="col-12">
+                        <img style={this.style} src={this.props.gitterTwo.avatar_url} alt="contender One"></img>
+                    </div>
+                    <div className="col-12 mt-2">
+                      <h2>{this.props.gitterTwo.name}</h2>
+                    </div>
+                </div>
+            )
+        }
+
         return (
             <form onSubmit={this.handleSubmit}>
                 <div className="form-group">
