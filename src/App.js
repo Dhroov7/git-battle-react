@@ -1,17 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 import Navbar from './compornents/navbar'
-import User from './compornents/user'
+import Gitter from './compornents/gitter'
+import axios from 'axios'
 
 class App extends Component {
+
+  constructor() {
+    super()
+    this.state = {
+      gitterOne: {},
+      gitterTwo: {},
+      battleIsOn: false
+    }
+  }
   render() {
     return (
       <div>
         <Navbar />
-        <User />
+        <Gitter addGitterOne={this.addGitterOne} addGitterTwo={this.addGitterTwo} />
       </div>
     );
+  }
+
+  addGitterOne = (query) => {
+    // e.preventDefault()
+    axios.get(`https://api.github.com/users/${query}`).then((response) => {
+      this.setState({ gitterOne: response.data })
+    })
+  }
+
+  addGitterTwo = () => {
+
   }
 }
 
