@@ -20,11 +20,12 @@ class App extends Component {
       fontSize: '100px',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       marginBottom: '150px',
-      color: 'lightgrey'
+      color: 'lightgrey',
+      textDecoration: 'none'
     }
 
     this.fotterStyle = {
-      color: 'lightgrey',
+      color: 'lightgrey !important',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       fontSize: '20px',
       marginTop: '12%',
@@ -49,7 +50,7 @@ class App extends Component {
     }
     return (
       <div>
-        <h1 className="mt-5" style={this.headingStyle} align="center">Git Battle</h1>
+        <h1 className="mt-5" align="center"><a style={this.headingStyle} href="/">Git Battle</a></h1>
         {afterSubmit}
         {fotter}
       </div>
