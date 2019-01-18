@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/git-battle-react/static/js/runtime~main.d5b5c2a1.js"
   },
   {
-    "revision": "a1c6eb6d850d0e25d560",
-    "url": "/git-battle-react/static/js/main.a1c6eb6d.chunk.js"
+    "revision": "7ed64a3d1769cc7c7836",
+    "url": "/git-battle-react/static/js/main.7ed64a3d.chunk.js"
   },
   {
     "revision": "c56c92d015e027254171",
     "url": "/git-battle-react/static/js/1.c56c92d0.chunk.js"
   },
   {
-    "revision": "a1c6eb6d850d0e25d560",
+    "revision": "7ed64a3d1769cc7c7836",
     "url": "/git-battle-react/static/css/main.8097550b.chunk.css"
   },
   {
-    "revision": "7d438d10212d761d745e689c4c667058",
+    "revision": "93959cfbeea230520c9a6e539529a35f",
     "url": "/git-battle-react/index.html"
   }
 ];
