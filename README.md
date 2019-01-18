@@ -2,6 +2,8 @@
 
 #### A Github Battle App created using ReactJS in which you can submit your username and some other and see who's the open source ninja! :fire:
 
+### Live: www.dhroovgupta.me/git-battle-react
+
 ## ScreenShots: 
 
 ![alt text](https://github.com/Dhroov7/git-battle-react/blob/master/src/scrrenshots/Screenshot%202019-01-18%20at%2011.25.09%20PM.png "ScreenShot 1")
