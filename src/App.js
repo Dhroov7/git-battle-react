@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Navbar from './compornents/navbar'
 import Gitter from './compornents/gitter'
 import Winner from './compornents/winner'
 import axios from 'axios'
@@ -16,19 +15,43 @@ class App extends Component {
       loser: {},
       tie: 'false'
     }
+
+    this.headingStyle = {
+      fontSize: '100px',
+      fontFamily: '"Comic Sans MS", cursive, sans-serif',
+      marginBottom: '150px',
+      color: 'lightgrey'
+    }
+
+    this.fotterStyle = {
+      color: 'lightgrey',
+      fontFamily: '"Comic Sans MS", cursive, sans-serif',
+      fontSize: '20px',
+      marginTop: '12%',
+      position: 'relative',
+      left: '75%'
+  }
+
   }
 
   render() {
     let afterSubmit = <Gitter addGitterOne={this.addGitterOne}
       addGitterTwo={this.addGitterTwo} battleIsOn={this.state.battleIsOn}
       gitterOne={this.state.gitterOne} gitterTwo={this.state.gitterTwo} battle={this.battle} />
+    
+    let fotter 
     if (Object.keys(this.state.winner).length > 0) {
       afterSubmit = <Winner winner={this.state.winner} loser={this.state.loser} />
     }
+
+    if(!this.state.battleIsOn){
+      fotter = <footer style={this.fotterStyle}>Made with <span>❤️</span> By Dhroov Gupta</footer>
+    }
     return (
       <div>
-        <Navbar />
+        <h1 className="mt-5" style={this.headingStyle} align="center">Git Battle</h1>
         {afterSubmit}
+        {fotter}
       </div>
     );
   }
