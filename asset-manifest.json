@@ -1,7 +1,7 @@
 {
   "main.css": "/git-battle-react/static/css/main.8097550b.chunk.css",
-  "main.js": "/git-battle-react/static/js/main.7ed64a3d.chunk.js",
-  "main.js.map": "/git-battle-react/static/js/main.7ed64a3d.chunk.js.map",
+  "main.js": "/git-battle-react/static/js/main.8ee23a38.chunk.js",
+  "main.js.map": "/git-battle-react/static/js/main.8ee23a38.chunk.js.map",
   "static/js/1.c56c92d0.chunk.js": "/git-battle-react/static/js/1.c56c92d0.chunk.js",
   "static/js/1.c56c92d0.chunk.js.map": "/git-battle-react/static/js/1.c56c92d0.chunk.js.map",
   "runtime~main.js": "/git-battle-react/static/js/runtime~main.d5b5c2a1.js",
@@ -9,6 +9,6 @@
   "static/media/index.css": "/git-battle-react/static/media/background.6669f0a9.svg",
   "static/css/main.8097550b.chunk.css.map": "/git-battle-react/static/css/main.8097550b.chunk.css.map",
   "index.html": "/git-battle-react/index.html",
-  "precache-manifest.6baea762b92560d5aadfce7635c5d955.js": "/git-battle-react/precache-manifest.6baea762b92560d5aadfce7635c5d955.js",
+  "precache-manifest.13e174e972cc8c6e5ad4634413434486.js": "/git-battle-react/precache-manifest.13e174e972cc8c6e5ad4634413434486.js",
   "service-worker.js": "/git-battle-react/service-worker.js"
 }
