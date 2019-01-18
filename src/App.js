@@ -25,7 +25,7 @@ class App extends Component {
     }
 
     this.fotterStyle = {
-      color: 'lightgrey !important',
+      color: 'lightgrey',
       fontFamily: '"Comic Sans MS", cursive, sans-serif',
       fontSize: '20px',
       marginTop: '12%',
