@@ -11,7 +11,7 @@
 ![alt text](https://github.com/Dhroov7/git-battle-react/blob/master/src/scrrenshots/Screenshot%202019-01-18%20at%2011.27.27%20PM.png "ScreenShot 1")
 
 
-## For Development
+## For Development:
 
 ```
 git clone
